@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>kurit' vredno</title>
+	<link rel="stylesheet" type="text/css" href="styles/main.css">
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+</head>
+<body>
+	<section class="non_game condition_1 non_displayed">
+		<div class="st_page">
+			<div class="cig_pack st_page_left">
+				<div class="cig_pack_bg_cont"></div>
+				<div class="cig_pack_capsule non_displayed"></div>
+				<div class="???">
+					
+				</div>
+				<p class="cig_pack_caption non_displayed">ягодный вкус</p>
+			</div>
+			<div class="st_page_center">
+				<h1>
+					раскройте вкус капсул <span>glamour!</span>
+				</h1>
+				<h3>
+					жмите на капсулу
+				</h3>
+				<div class="st_page_center_cond2_into3 non_displayed">
+					<img class="expl_caps" src="images/expl_caps.png">
+					<a class="" href="">
+						далее
+					</a>
+				</div>
+			</div>
+			<div class="cig_pack st_page_right">
+				<div class="cig_pack_bg_cont"></div>
+				<div class="cig_pack_capsule non_displayed"></div>
+				<div class="???">
+					
+				</div>
+				<p class="cig_pack_caption non_displayed">ментоловый вкус</p>
+			</div>
+			<div class="st_page_none non_displayed">
+				технология lss
+			</div>
+		</div>
+		<div class="add_part non_displayed">
+			<div class="add_part_start">
+				<h2>
+					<p>Ловите капсулы и раскройте вкус</p><span>glamour secret violet</span></br> и <span>glamour secret menthol</span>
+				</h2>
+				<div>
+					<img class="expl_caps button_to_play" src="images/expl_caps.png">
+					<a class="button_to_play" href="">
+						играть
+					</a>
+				</div>
+			</div>
+			<div class="add_part_end non_displayed">
+				<h2>
+					поздравляем!
+				</h2>
+				<h3>
+					Вы узнали вкус капсул <span>glamour secret:</span> <span class="underline">ягода</span> и <span class="underline">ментол.</span>
+				</h3>
+			</div>
+		</div>
+	</section>
+	<section class="game" style="display: block;">	
+		<div class="game_bg"></div>
+		<div class="game_score">
+			<h2>ловите капсулы</h2>
+			<div class="game_score_balls">
+				<div class="balls ball_1"></div>
+				<div class="balls ball_2"></div>
+				<div class="balls ball_3"></div>
+				<div class="balls ball_4"></div>
+				<div class="balls ball_5"></div>
+				<div class="animated_score_move"></div>
+			</div>
+			<div class="animated_score_explode_hide"></div>
+		</div>
+		<div class="game_violet_capsule">
+			<div class="violet_capsule_1"></div>
+			<div class="violet_capsule_2"></div>
+			<div class="violet_capsule_3"></div>
+			<div class="violet_capsule_4"></div>
+			<div class="violet_capsule_5"></div>
+			<div class="violet_capsule_6"></div>
+			<div class="violet_capsule_7"></div>
+			<div class="violet_capsule_8"></div>
+			<div class="violet_capsule_9"></div>
+			<div class="violet_capsule_10"></div>
+			<div class="violet_capsule_11"></div>
+			<div class="violet_capsule_12"></div>
+			<div class="violet_capsule_13"></div>
+			<div class="violet_capsule_14"></div>
+			<div class="violet_capsule_15"></div>
+			<div class="violet_capsule_16"></div>
+			<div class="violet_capsule_17"></div>
+			<div class="violet_capsule_18"></div>
+			<div class="violet_capsule_19"></div>
+			<div class="violet_capsule_20"></div>
+		</div>
+		<div class="game_menthole_capsule">
+			<div class="menthole_capsule_1"></div>
+			<div class="menthole_capsule_2"></div>
+			<div class="menthole_capsule_3"></div>
+			<div class="menthole_capsule_4"></div>
+			<div class="menthole_capsule_5"></div>
+			<div class="menthole_capsule_6"></div>
+			<div class="menthole_capsule_7"></div>
+			<div class="menthole_capsule_8"></div>
+			<div class="menthole_capsule_9"></div>
+			<div class="menthole_capsule_10"></div>
+			<div class="menthole_capsule_11"></div>
+			<div class="menthole_capsule_12"></div>
+			<div class="menthole_capsule_13"></div>
+			<div class="menthole_capsule_14"></div>
+			<div class="menthole_capsule_15"></div>
+			<div class="menthole_capsule_16"></div>
+			<div class="menthole_capsule_17"></div>
+			<div class="menthole_capsule_18"></div>
+			<div class="menthole_capsule_19"></div>
+			<div class="menthole_capsule_20"></div>
+		</div>
+	</section>
+	<footer>
+		
+	</footer>
+
+	<script type="text/javascript">
+		var menth_caps_counter = 0;
+		var violet_caps_counter = 0;
+		var common_counter = 0;
+		var capsule_counter = 0;
+
+		(function($){
+			$(function(){
+				$('a').click(function(){
+					 event.preventDefault();
+				})
+			});
+			$(function(){
+				$('.cig_pack').click(function(){
+					$('.cig_pack_capsule').removeClass('non_displayed');
+				})
+			});
+			// $(function(){
+			// 	$('.cig_pack_capsule').click(function(){
+			// 		$('.non_game').addClass('condition_2').removeClass('condition_1');
+			// 	})
+			// });
+			$(function(){
+				$('.st_page_right .cig_pack_capsule').one("click",(function(){
+					$('.st_page_right .cig_pack_caption').removeClass('non_displayed');
+					capsule_counter++;
+					if (capsule_counter==2) {
+						$('.st_page_center_cond2_into3').removeClass('non_displayed');
+						$('.st_page_center h3').addClass('non_displayed');
+					}
+				}));
+			});
+			$(function(){
+				$('.st_page_left .cig_pack_capsule').one("click",(function(){
+					$('.st_page_left .cig_pack_caption').removeClass('non_displayed');
+					capsule_counter++;
+					if (capsule_counter==2) {
+						$('.st_page_center_cond2_into3').removeClass('non_displayed');
+						$('.st_page_center h3').addClass('non_displayed');
+					}
+				}));
+			});
+			$(function(){
+				$('.st_page_center_cond2_into3').click(function(){
+					$('.non_game').addClass('condition_2').removeClass('condition_1');
+				})
+			});
+			$(function(){
+				$('.button_to_play').click(function(){
+					$('.non_game').addClass('condition_3').removeClass('condition_2');
+					$('.cig_pack_caption').addClass('non_displayed');
+					$('.game').show();
+				})
+			});
+			$(function(){
+		 		$('.game_menthole_capsule div').click(function(){
+						// $(this).hide();
+						// var r = this;
+						// menth_caps_counter++;
+						// common_counter = violet_caps_counter + menth_caps_counter;
+						// $('.ball_'+ common_counter).addClass("m_balls");
+						// function func() {
+						//  	$(r).show();
+						// }
+						// setTimeout(animate_score_delay, 500);
+						$(this).addClass('game_menthole_capsule_expl');
+
+						function animate_score_delay(){
+
+							if (common_counter == 5) {
+		 						$('.game_score_balls').addClass("animated_score").removeClass("game_score_balls");
+		 					}
+		 				}
+				});
+		 	});
+		 	$(function(){
+		 		$('.game_violet_capsule div').click(function(){
+						$(this).hide();
+						var r = this;
+						// console.log(r);
+						violet_caps_counter++;
+						common_counter = violet_caps_counter + menth_caps_counter;
+						$('.ball_'+ common_counter).addClass("v_balls");
+						function func() {
+						 	$(r).show();
+						}
+						setTimeout(animate_score_delay, 500);
+
+						function animate_score_delay(){
+						
+							if (common_counter == 5) {
+		 						$('.game_score_balls').addClass("animated_score").removeClass("game_score_balls");
+		 					}
+		 				}
+				});
+		 	});
+
+		 	$('.animated_score_move').one('animationend ',   
+  				function(e) {
+    			$('.animated_score_explode_hide').addClass("animated_score_explode").removeClass('animated_score_explode_hide');
+
+    			$('.animated_score_explode').one('animationend ',   
+  				function(e) {
+    				$('.game').hide();
+    				$('.non_game').addClass("condition_2").removeClass('condition_3');
+    				$('.add_part').addClass("after_game");
+    				$('.st_page_none').removeClass('non_displayed');
+  				});
+  				// setTimeout(func,3500);
+  			});
+
+  			// $('.animated_score_explode').one('animationend ',   
+  			// 	function(e) {
+    	// 		$('.game').hide();
+    	// 		$('.non_game').show();
+  			// });
+		 	
+		})(jQuery);
+
+	</script>
+</body>
+</html>

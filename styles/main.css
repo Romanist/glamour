@@ -1,0 +1,503 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/*//////////////////////////////////////////////////*/
+@font-face {
+    font-family: GIL; /* Имя шрифта */
+    src: url(../fonts/GIL.TTF); /* Путь к файлу со шрифтом */
+   }
+@font-face {
+    font-family: MyrPro-bold; /* Имя шрифта */
+    src: url(../fonts/MyrPro.otf); /* Путь к файлу со шрифтом */
+   }
+@font-face {
+    font-family: MyrPro-reg; /* Имя шрифта */
+    src: url(../fonts/GillSans-Light.ttf); /* Путь к файлу со шрифтом */
+   }
+html, body{
+	height: 100%;
+}
+section{
+	background-image: url(../images/bg.png);
+	height: 100%;
+	overflow: hidden;
+	font-family: MyrPro-reg;
+}
+.st_page{
+	height: 100%;
+}
+.st_page div{
+	float: left;
+}
+.non_displayed{
+	display: none;
+}
+.cig_pack{
+	width: 30%;
+	height: 100%;
+}
+.cig_pack_bg_cont{
+	/*-webkit-background-size: contain;*/
+	/*background-size: contain;*/
+	-webkit-background-size: 80%;
+	background-size: 80%;
+	background-repeat: no-repeat;
+	
+	/*-ms-background-position-y: 50%;*/
+	/*background-position-y: 50%;*/
+	height: 100%;
+	/*margin: 10% 0;*/
+	width: 100%;
+}
+.condition_1 .cig_pack_bg_cont{
+	animation-name: zooming;
+    animation-duration:4.4s;
+    /*animation-delay: 5s;*/
+    animation-timing-function: linear;
+}
+.condition_1 .st_page .st_page_left .cig_pack_bg_cont{
+	background-image: url(../images/violet_pack.png);
+}
+.condition_1 .st_page .st_page_right .cig_pack_bg_cont{
+	background-image: url(../images/menthol_pack.png);
+}
+.st_page_center{
+	width: 40%;
+	font-size: 66px;
+	text-transform: uppercase;
+	color: #ffffff;
+	text-align: center;
+	animation-name: appearing;
+    animation-duration:2.4s;
+    /*animation-delay: 5s;*/
+    animation-timing-function: linear;	
+}
+.st_page_center h1{
+	padding: 96px 80px 140px;
+	line-height: 86px;
+	letter-spacing: 5px;
+}
+.st_page_center h1 span{
+	font-weight: bold;
+}
+.st_page_center h3{
+	font-size: 46px;
+	padding: 0 160px;
+	line-height: 60px;
+}
+.cig_pack_capsule{
+	background-image: url(../images/capsule.png);
+	width: 15%;
+    height: 27%;
+    position: absolute;
+    background-repeat: no-repeat;
+    bottom: 14%;
+    left: 3%;
+}
+.st_page_right .cig_pack_capsule{
+	left: 82%;
+}
+.cig_pack_capsule:hover{
+	cursor: pointer;
+}
+.expl_caps{
+	max-width: 30%;
+	height: auto;
+	float: left;
+	padding-left: 14vw;
+}
+/*////////////////////////////////*/
+/*next condition*/
+/*////////////////////////////////*/
+.condition_2 .st_page_center{
+	display: none;
+}
+.condition_2 .st_page{
+	width: 40%;
+	float: left;
+}
+.condition_2 .st_page .cig_pack{
+	width: 50%;
+}
+.condition_2 .cig_pack_capsule{
+	display: none;
+}
+.cig_pack_caption{
+	position: absolute;
+    bottom: 5%;
+    font-size: 60px;
+}
+.st_page_center_cond2_into3 .expl_caps{
+	padding-left: 5vw;
+}
+.st_page_none{
+	position: absolute;
+    font-size: 60px;
+    text-align: center;
+    width: 40%;
+    bottom: 5%;
+}
+.st_page_center_cond2_into3 a{
+	text-decoration: none;
+	color: #fff;
+}
+.cig_pack_bg_cont{
+	background-position: 50%;
+}
+.condition_2 .cig_pack_bg_cont{
+	-webkit-background-size: 100%;
+	background-size: 100%;
+}
+.condition_2 .st_page .st_page_left .cig_pack_bg_cont{
+	background-image: url(../images/violet_pack_2.png);
+}
+.condition_2 .st_page .st_page_right .cig_pack_bg_cont{
+	background-image: url(../images/menthol_pack_2.png);
+	background-size: 80%;
+    background-position-y: 45%;
+}
+.condition_2 .add_part{
+	display: block;
+	float: left;
+	width: 60%;
+	height: 100%;
+	font-size: 62.5px;
+	color: #fff;
+}
+.add_part_start, .add_part_end{
+	width: 100%;
+	text-align: center;
+}
+.add_part_start div img:hover{
+	cursor: pointer;
+}
+.add_part_start div a{
+	float: left;
+	line-height: 11vw;
+	text-decoration: none;
+	color: #fff;	
+}
+.add_part_start h2{
+	padding-bottom: 100px;
+}
+.add_part_start h2 p{
+	padding: 254px 348px 56px;
+}
+.add_part_start h2 span{
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	line-height: 70px;
+}
+/*//////////////////////////////////////*/
+/*next condition*/
+/*///////////////////////////////////////*/
+.non_game.condition_4{
+	display: block;
+}
+.after_game .add_part_start{
+	display: none;
+}
+.after_game .add_part_end{
+	display: block;
+}
+.add_part_end h2{
+	font-size: 91.67px;
+	text-transform: uppercase;
+	padding: 150px 0 250px;
+}
+.add_part_end h3{
+	font-size: 62.5px;
+	padding-left: 280px;
+	padding-right: 280px;
+}
+/*///////////////////////////////////////*/
+/*LET THE GAME BEGIN*/
+/*/////////////////////////////////////*/
+.non_game.condition_3{
+	display: none;
+}
+.game_score{
+	width: 30%;
+	color: #fff;
+	margin: 0 auto;
+	font-size: 40px;
+	text-align: center;
+	position: absolute;
+	z-index: 10;
+	margin-left: 35%;
+}
+.game_score_balls, .animated_score{
+	width: 100%;
+    border: white solid 5px;
+    height: 80px;
+    margin: 0 auto;
+    overflow: hidden;
+    float: left;
+    /*margin-left: 35%;*/
+}
+.animated_score .balls{
+	display: none;
+}
+.animated_score .animated_score_move{
+	animation-name: scoring;
+    animation-duration:2.4s;
+    /*animation-iteration-count: infinite;*/
+    animation-timing-function: linear;
+    width: 20%;
+    height: 100%;
+    position: relative;
+    background-color: #fff;
+    float: left;
+    left:100%;
+}
+.animated_score_explode_hide{
+	display: none;
+	float: right;
+}
+.animated_score_explode{
+	float: right;
+	margin-top: -120px;
+	animation-name: exploding;
+	animation-duration: .4s;
+	transform-origin: top;
+	background-image: url(../images/menu_an_expl.png);
+	background-repeat: no-repeat;
+	-webkit-background-size: contain;
+	background-size: contain;
+	width: 5px;
+	height: 5px;
+}
+.game{
+	/*height: 5000px;*/
+	overflow: hidden;
+	position: relative;
+	display: none;
+}
+.game_score h2{
+	font-size: 60px;
+	padding: 40px 0;
+	text-transform: uppercase;
+}
+.game_bg{
+	background: url(../images/moving_bg.png);
+	/*background-repeat: repeat-y;*/
+	background-size: 95%;
+	width: 100%;
+	height: 3560px;
+	position: absolute;
+	animation-name: falling_bg;
+	animation-duration:20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.game_menthole_capsule_expl{
+	background: url();
+}
+.game_violet_capsule, .game_menthole_capsule{
+	height: 5160px;
+	position: absolute;
+    /*width: 100%;*/
+    top: 0;
+    animation-name: falling;
+    animation-duration:14s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.game_violet_capsule div, .game_menthole_capsule div{
+	width: 155px;
+	height: 150px;
+	position: absolute;
+	-webkit-background-size: contain;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+.game_violet_capsule div{
+	background-image: url(../images/violet_capsule.png);
+}
+.game_menthole_capsule div{
+	background-image: url(../images/menthol_capsule.png);
+}
+.game_violet_capsule div:hover, .game_menthole_capsule div:hover{
+	cursor: pointer;
+}
+
+.violet_capsule_1{top: 20px;left: 10px;}
+.violet_capsule_2{top: 1800px;left: 200px;}
+.violet_capsule_3{top: 3600px;left: 600px;}
+.violet_capsule_4{top: 4100px;left: 10px;}
+.violet_capsule_5{top: 1820px;left: 1000px;}
+.violet_capsule_6{top: 3420px;left: 1600px;}
+.violet_capsule_7{top: 1820px;left: 1000px;}
+.violet_capsule_8{top: 520px;left: 240px;}
+.violet_capsule_9{top: 2180px;left: 770px;}
+.violet_capsule_10{top: 3320px;left: 200px;}
+.violet_capsule_11{top: 4600px;left: 240px;}
+.violet_capsule_12{top: 820px;left: 1720px;}
+.violet_capsule_13{top: 2520px;left: 1100px;}
+.violet_capsule_14{top: 4900px;left: 1720px;}
+.violet_capsule_15{top: 1820px;left: 1400px;}
+.violet_capsule_16{top: 2190px;left: 300px;}
+.violet_capsule_17{top: 1020px;left: 1600px;}
+.violet_capsule_18{top: 5100px;left: 1600px;}
+.violet_capsule_19{top: 1220px;left: 10px;}
+.violet_capsule_20{top: 1120px;left: 1000px;}
+
+.menthole_capsule_1{top: 900px;left: 1500px;}
+.menthole_capsule_2{top: 4980px;left: 1500px;}
+.menthole_capsule_3{top: 100px;left: 800px;}
+.menthole_capsule_4{top: 4180px;left: 800px;}
+.menthole_capsule_5{top: 1440px;left: 200px;}
+.menthole_capsule_6{top: 2400px;left: 1000px;}
+.menthole_capsule_7{top: 140px;left: 1500px;}
+.menthole_capsule_8{top: 4220px;left: 1500px;}
+.menthole_capsule_9{top: 1300px;left: 400px;}
+.menthole_capsule_10{top: 2400px;left: 1500px;}
+.menthole_capsule_11{top: 3600px;left: 1000px;}
+.menthole_capsule_12{top: 1000px;left: 1100px;}
+.menthole_capsule_13{top: 3100px;left: 830px;}
+.menthole_capsule_14{top: 500px;left: 730px;}
+.menthole_capsule_15{top: 4580px;left: 730px;}
+.menthole_capsule_16{top: 3200px;left: 50px;}
+.menthole_capsule_17{top: 4880px;left: 1200px;}
+.menthole_capsule_18{top: 3200px;left: 1000px;}
+.menthole_capsule_19{top: 2600px;left: 876px;}
+.menthole_capsule_20{top: 800px;left: 1200px;}
+
+.balls{
+	display: none;
+	width: 20%;
+	height: 100%;
+	background-repeat: no-repeat;
+	-webkit-background-size: contain;
+	background-size: contain;
+	float: left;
+}
+.v_balls{
+	background-image: url(../images/violet_capsule.png);
+	display: block;
+}
+.m_balls{
+	background-image: url(../images/menthol_capsule.png);
+	display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes zooming{
+	0%{
+		-webkit-background-size: 100%;
+		background-size: 100%;
+	}
+	100%{
+		-webkit-background-size: 80%;
+		background-size: 80%;
+	}
+}
+@keyframes appearing{
+	0%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+@keyframes falling{
+	 0%   {top: -4080px;}
+	 100% {top:1080;}
+}
+@keyframes falling_bg{
+	0%   {top: -2480px;}
+	/*50%  {top: -2580px}*/
+	100% {top:180px;}
+}
+@keyframes scoring{
+	0%{
+		left: 0;
+	}
+	100%{
+		left: 100%;
+		/*display: none;*/
+	}
+}
+@keyframes exploding{
+	0%{
+		width: 20px;
+		height: 20px;
+	}
+	100%{
+		transform: scale(50,50);
+		-webkit-transform-origin: center;
+		-moz-transform-origin: center;
+		-ms-transform-origin: center;
+		-o-transform-origin: center;
+		transform-origin: top;
+	}
+}
+@media only screen and (max-width: 1600px){
+	*{
+		font-size: 2vw!important;
+		padding: 0!important;
+		margin: 0!important;
+		line-height: 2vw!important;
+	}
+}
