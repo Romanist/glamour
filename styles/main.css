@@ -116,10 +116,10 @@ footer{
 	width: 30%;
 	height: 100%;
 	position: relative;
-	-webkit-animation: appearing 1s ease;
-	-moz-animation: appearing 1s ease;
-	-o-animation: appearing 1s ease;
-	animation: oppearing 1s ease;
+	-webkit-animation: oppearing 1.4s ease-out;
+	-moz-animation: oppearing 1.4s ease-out;
+	-o-animation: oppearing 1.4s ease-out;;
+	animation: oppearing 1.4s ease-out;
 }
 @-webkit-keyframes oppearing{
 	0%{margin-top: -1000px;}
@@ -201,10 +201,10 @@ footer{
 	text-align: center;
 	/*animation-name: appearing;
     animation-duration:2.4s;*/
-    -webkit-animation: appearing 2.4s; 
-  	-moz-animation:    appearing 2.4s; 
-  	-o-animation:      appearing 2.4s; 
-  	animation:         appearing 2.4s;
+    -webkit-animation: appearing 2.8s ease-out; 
+  	-moz-animation:    appearing 2.8s ease-out; 
+  	-o-animation:      appearing 2.8s ease-out; 
+  	animation:         appearing 2.8s ease-out;
     /*animation-delay: 5s;*/
     /*animation-timing-function: linear;	*/
 }
@@ -226,10 +226,10 @@ footer{
 	/*animation-name: appearing_motive;
     animation-duration:5s;
     animation-timing-function: linear;*/
-    -webkit-animation: appearing_motive 5s linear; 
-  	-moz-animation:    appearing_motive 5s linear; 
-  	-o-animation:      appearing_motive 5s linear; 
-  	animation:         appearing_motive 5s linear;
+    -webkit-animation: appearing_motive 6s ease-out; 
+  	-moz-animation:    appearing_motive 6s ease-out; 
+  	-o-animation:      appearing_motive 6s ease-out; 
+  	animation:         appearing_motive 6s ease-out;
     margin-top: 104px;	
 }
 .cig_pack_capsule{
@@ -262,10 +262,10 @@ footer{
     /*background-image: url(../images/expl_ment_caps.png);*/
     /*animation-name: appearing_caps;
     animation-duration:4.4s;*/
-    -webkit-animation: appearing_caps 4.4s; 
-  	-moz-animation:    appearing_caps 4.4s; 
-  	-o-animation:      appearing_caps 4.4s; 
-  	animation:         appearing_caps 4.4s;
+    -webkit-animation: appearing_caps 4.4s ease-out; 
+  	-moz-animation:    appearing_caps 4.4s ease-out; 
+  	-o-animation:      appearing_caps 4.4s ease-out; 
+  	animation:         appearing_caps 4.4s ease-out;
 }
 .cig_pack_bg_cont_caps div{
 
@@ -273,10 +273,10 @@ footer{
 .condition_1 .cig_pack_bg_cont_taste{
 	/*animation-name: appearing_caps;
     animation-duration:3s;*/
-    -webkit-animation: appearing_caps 3s; 
-  	-moz-animation:    appearing_caps 3s; 
-  	-o-animation:      appearing_caps 3s; 
-  	animation:         appearing_caps 3s;
+    -webkit-animation: appearing_caps 3s ease-out; 
+  	-moz-animation:    appearing_caps 3s ease-out; 
+  	-o-animation:      appearing_caps 3s ease-out; 
+  	animation:         appearing_caps 3s ease-out;
        position: relative;
     top: 52.5%;
     right: -13.6%;
@@ -430,10 +430,10 @@ footer{
     animation-delay: 4.4s;
     animation-iteration-count: infinite;
     animation-duration: 16s;*/
-    -webkit-animation: spin_caps 16s linear infinite 4.4s; 
-  	-moz-animation:    spin_caps 16s linear infinite 4.4s; 
-  	-o-animation:      spin_caps 16s linear infinite 4.4s; 
-  	animation:         spin_caps 16s linear infinite 4.4s;
+    -webkit-animation: spin_caps 16s linear infinite 3.1s; 
+  	-moz-animation:    spin_caps 16s linear infinite 3.1s; 
+  	-o-animation:      spin_caps 16s linear infinite 3.1s; 
+  	animation:         spin_caps 16s linear infinite 3.1s;
     transform-origin: 51% 31%;
 }
 .cig_pack_bg_cont_caps div.deep_b_f{
@@ -1529,22 +1529,22 @@ footer{
 }*/
 @-webkit-keyframes appearing_motive{
 	0%{opacity: 0;}
-	90%{opacity: 0;}
+	80%{opacity: 0;}
 	100%{opacity: 100%;}
 }
 @-moz-keyframes appearing_motive{
 	0%{opacity: 0;}
-	90%{opacity: 0;}
+	80%{opacity: 0;}
 	100%{opacity: 100%;}
 }
 @-o-keyframes appearing_motive{
 	0%{opacity: 0;}
-	90%{opacity: 0;}
+	80%{opacity: 0;}
 	100%{opacity: 100%;}
 }
 @keyframes appearing_motive{
 	0%{opacity: 0;}
-	90%{opacity: 0;}
+	80%{opacity: 0;}
 	100%{opacity: 100%;}
 }
 /*@keyframes spin_caps { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }*/
@@ -1584,7 +1584,7 @@ footer{
 		visibility: hidden;
 		cursor: default;
 	}
-	90%{
+	80%{
 		opacity: 0;
 		visibility: hidden;
 		cursor: default;
@@ -1601,7 +1601,7 @@ footer{
 		visibility: hidden;
 		cursor: default;
 	}
-	90%{
+	80%{
 		opacity: 0;
 		visibility: hidden;
 		cursor: default;
@@ -1618,7 +1618,7 @@ footer{
 		visibility: hidden;
 		cursor: default;
 	}
-	90%{
+	80%{
 		opacity: 0;
 		visibility: hidden;
 		cursor: default;
@@ -1635,7 +1635,7 @@ footer{
 		visibility: hidden;
 		cursor: default;
 	}
-	90%{
+	80%{
 		opacity: 0;
 		visibility: hidden;
 		cursor: default;
@@ -1859,7 +1859,7 @@ footer{
 	0%{
 		opacity: 0;
 	}
-	80%{
+	60%{
 		opacity: 0;
 	}
 	100%{
@@ -1870,7 +1870,7 @@ footer{
 	0%{
 		opacity: 0;
 	}
-	80%{
+	60%{
 		opacity: 0;
 	}
 	100%{
@@ -1881,7 +1881,7 @@ footer{
 	0%{
 		opacity: 0;
 	}
-	80%{
+	60%{
 		opacity: 0;
 	}
 	100%{
@@ -1892,7 +1892,7 @@ footer{
 	0%{
 		opacity: 0;
 	}
-	80%{
+	60%{
 		opacity: 0;
 	}
 	100%{
