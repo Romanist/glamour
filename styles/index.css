@@ -143,11 +143,11 @@ footer {
 .cig_pack {
 	width: 30%;
 	height: 100%;
-	-webkit-animation: oppearing 1.4s ease-out;
-	-moz-animation: oppearing 1.4s ease-out;
-	-ms-animation: oppearing 1.4s ease-out;
-	-o-animation: oppearing 1.4s ease-out;
-	animation: oppearing 1.4s ease-out;
+	-webkit-animation: oppearing 2s ease-out;
+	-moz-animation: oppearing 2s ease-out;
+	-ms-animation: oppearing 2s ease-out;
+	-o-animation: oppearing 2s ease-out;
+	animation: oppearing 2s ease-out;
 }
 
 @-webkit-keyframes oppearing {
@@ -597,11 +597,11 @@ footer {
 }
 
 .expl_caps {
-	-webkit-animation: glow 1.2s linear infinite;
-	-moz-animation: glow 1.2s linear infinite;
-	-ms-animation: glow 1.2s linear infinite;
-	-o-animation: glow 1.2s linear infinite;
-	animation: glow 1.2s linear infinite;
+	-webkit-animation: glow 2.6s ease infinite;
+	-moz-animation: glow 2.6s ease infinite;
+	-ms-animation: glow 2.6s ease infinite;
+	-o-animation: glow 2.6s ease infinite;
+	animation: glow 2.6s ease infinite;
 }
 
 @-webkit-keyframes glow {
@@ -679,7 +679,7 @@ footer {
 	-moz-animation: se_cond 1s linear;
 	-ms-animation: se_cond 1s linear;
 	-o-animation: se_cond 1s linear;
-	animation: se_cond 1s linear;
+	animation: se_cond 1.4s linear;
 }
 
 @-webkit-keyframes se_cond {
@@ -840,18 +840,18 @@ footer {
 
 .add_part_start div {
 	/*animation: falling_up 2s ease;*/
-	-webkit-animation: falling_up 3s ease-out;
-	-moz-animation: falling_up 3s ease-out;
-	-ms-animation: falling_up 3s ease-out;
-	-o-animation: falling_up 3s ease-out;
-	animation: falling_up 3s ease-out;
+	-webkit-animation: falling_up 3.4s ease-out;
+	-moz-animation: falling_up 3.4s ease-out;
+	-ms-animation: falling_up 3.4s ease-out;
+	-o-animation: falling_up 3.4s ease-out;
+	animation: falling_up 3.4s ease-out;
 }
 
 @-webkit-keyframes falling_up {
 	0% {
 		margin-top: 3000px;
 	}
-	60% {
+	30% {
 		margin-top: 2000px;
 	}
 	100% {
@@ -863,7 +863,7 @@ footer {
 	0% {
 		margin-top: 3000px;
 	}
-	60% {
+	30% {
 		margin-top: 2000px;
 	}
 	100% {
@@ -875,7 +875,7 @@ footer {
 	0% {
 		margin-top: 3000px;
 	}
-	60% {
+	30% {
 		margin-top: 2000px;
 	}
 	100% {
@@ -887,7 +887,7 @@ footer {
 	0% {
 		margin-top: 3000px;
 	}
-	60% {
+	30% {
 		margin-top: 2000px;
 	}
 	100% {
@@ -900,7 +900,7 @@ footer {
 	0% {
 		margin-top: 3000px;
 	}
-	60% {
+	30% {
 		margin-top: 2000px;
 	}
 	100% {
@@ -910,11 +910,11 @@ footer {
 
 .add_part_start h2 {
 	padding-bottom: 134px;
-	-webkit-animation: falling_down 1s ease;
-	-moz-animation: falling_down 1s ease;
-	-ms-animation: falling_down 1s ease;
-	-o-animation: falling_down 1s ease;
-	animation: falling_down 2s ease;
+	-webkit-animation: falling_down 2.4s ease-out;
+	-moz-animation: falling_down 2.4s ease-out;
+	-ms-animation: falling_down 2.4s ease-out;
+	-o-animation: falling_down 2.4s ease-out;
+	animation: falling_down 2.4s ease-out;
 }
 
 
@@ -922,7 +922,7 @@ footer {
 	0% {
 		margin-top: -1000px;
 	}
-	60% {
+	30% {
 		margin-top: -1000px;
 	}
 	100% {
@@ -934,7 +934,7 @@ footer {
 	0% {
 		margin-top: -1000px;
 	}
-	60% {
+	30% {
 		margin-top: -1000px;
 	}
 	100% {
@@ -946,7 +946,7 @@ footer {
 	0% {
 		margin-top: -1000px;
 	}
-	60% {
+	30% {
 		margin-top: -1000px;
 	}
 	100% {
@@ -958,7 +958,7 @@ footer {
 	0% {
 		margin-top: -1000px;
 	}
-	60% {
+	30% {
 		margin-top: -1000px;
 	}
 	100% {
@@ -970,7 +970,7 @@ footer {
 	0% {
 		margin-top: -1000px;
 	}
-	60% {
+	30% {
 		margin-top: -1000px;
 	}
 	100% {
@@ -1103,13 +1103,13 @@ footer {
 	border: white solid 5px;
 	height: 80px;
 	margin: 0 auto;
-	overflow: hidden;
+	/*overflow: hidden;*/
 	float: left;
 	/*margin-left: 35%;*/
 }
 
 .animated_score .balls {
-	display: none;
+	/*display: none;*/
 	-webkit-animation: fadeout .5s linear;
 	-moz-animation: fadeout .5s linear;
 	-ms-animation: fadeout .5s linear;
@@ -1306,7 +1306,7 @@ footer {
 	float: right;
 }
 
-.animated_score_explode {
+/*.animated_score_explode {
 	float: right;
 	-webkit-animation: exploding .4s;
 	-moz-animation: exploding .4s;
@@ -1323,7 +1323,7 @@ footer {
 	background-size: contain;
 	width: 5px;
 	height: 5px;
-}
+}*/
 
 .game {
 	overflow: hidden;
@@ -1346,11 +1346,11 @@ footer {
 	width: 100%;
 	height: 3560px;
 	position: absolute;
-	-webkit-animation: falling_bg 20s linear infinite;
-	-moz-animation: falling_bg 20s linear infinite;
-	-ms-animation: falling_bg 20s linear infinite;
-	-o-animation: falling_bg 20s linear infinite;
-	animation: falling_bg 20s linear infinite;
+	-webkit-animation: falling_bg 28s linear infinite;
+	-moz-animation: falling_bg 28s linear infinite;
+	-ms-animation: falling_bg 28s linear infinite;
+	-o-animation: falling_bg 28s linear infinite;
+	animation: falling_bg 28s linear infinite;
 }
 
 .game_menthole_capsule div.game_menthole_capsule_expl {
@@ -1366,11 +1366,11 @@ footer {
 	height: 5160px;
 	position: absolute;
 	top: 0;
-	-webkit-animation: falling 12s linear infinite;
-	-moz-animation: falling 12s linear infinite;
-	-ms-animation: falling 12s linear infinite;
-	-o-animation: falling 12s linear infinite;
-	animation: falling 12s linear infinite;
+	-webkit-animation: falling 18s linear infinite;
+	-moz-animation: falling 18s linear infinite;
+	-ms-animation: falling 18s linear infinite;
+	-o-animation: falling 18s linear infinite;
+	animation: falling 18s linear infinite;
 }
 
 .game_violet_capsule div,
@@ -3453,19 +3453,19 @@ footer {
 }
 
 .st_page_left .cig_pack_caption.enable {
-	-webkit-animation: motionFromLeft 1s ease-in-out 0s 1;
-	-moz-animation: motionFromLeft 1s ease-in-out 0s 1;
-	-ms-animation: motionFromLeft 1s ease-in-out 0s 1;
-	-o-animation: motionFromLeft 1s ease-in-out 0s 1;
-	animation: motionFromLeft 1s ease-in-out 0s 1;
+	-webkit-animation: motionFromLeft 2.5s ease-in-out 0s 1;
+	-moz-animation: motionFromLeft 2.5s ease-in-out 0s 1;
+	-ms-animation: motionFromLeft 2.5s ease-in-out 0s 1;
+	-o-animation: motionFromLeft 2.5s ease-in-out 0s 1;
+	animation: motionFromLeft 2.5s ease-in-out 0s 1;
 }
 
 .st_page_right .cig_pack_caption.enable {
-	-webkit-animation: motionFromRight 1s ease-in-out 0s 1;
-	-moz-animation: motionFromRight 1s ease-in-out 0s 1;
-	-ms-animation: motionFromRight 1s ease-in-out 0s 1;
-	-o-animation: motionFromRight 1s ease-in-out 0s 1;
-	animation: motionFromRight 1s ease-in-out 0s 1;
+	-webkit-animation: motionFromRight 2.5s ease-in-out 0s 1;
+	-moz-animation: motionFromRight 2.5s ease-in-out 0s 1;
+	-ms-animation: motionFromRight 2.5s ease-in-out 0s 1;
+	-o-animation: motionFromRight 2.5s ease-in-out 0s 1;
+	animation: motionFromRight 2.5s ease-in-out 0s 1;
 }
 
 @keyframes motionFromLeft {
@@ -3502,6 +3502,10 @@ footer {
 	}
 }
 
+
+
+
+
 .st_page_left .cig_pack_caption.vis,
 .st_page_right .cig_pack_caption.vis {
 	-webkit-transform: translate(0, 0);
@@ -3509,4 +3513,253 @@ footer {
 	-ms-transform: translate(0, 0);
 	-o-transform: translate(0, 0);
 	transform: translate(0, 0);
+}
+.game_score{
+	width: 30%;
+	color: #fff;
+	margin: 0 auto;
+	font-size: 40px;
+	text-align: center;
+	position: absolute;
+	z-index: 10;
+	margin-left: 35%;
+}
+.game_score_balls, .animated_score{
+	width: 550px;
+    border: white solid 5px;
+    height: 80px;
+    margin: 0 auto;
+    float: left;
+}
+.animated_score .balls{
+    -webkit-animation: fadeout .5s linear;
+  	-moz-animation:    fadeout .5s linear;
+  	-ms-animation:      fadeout .5s linear; 
+  	-o-animation:      fadeout .5s linear; 
+  	animation:         fadeout .5s linear;
+}
+.animated_score .animated_score_move{
+	-webkit-animation: fullwidth 1.5s linear;
+  	-moz-animation:    fullwidth 1.5s linear;
+  	-ms-animation:      fullwidth 1.5s linear; 
+  	-o-animation:      fullwidth 1.5s linear; 
+  	animation:         fullwidth 1.5s linear;
+    width: 0;
+    float: none;
+    height: 100%;
+    position: relative;
+    top:0;
+    left:0;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#2db7aa+1,5c3f8a+53,aa2d88+100 */
+background: #2db7aa; /* Old browsers */
+background: -moz-linear-gradient(top, #2db7aa 1%, #5c3f8a 53%, #aa2d88 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #2db7aa 1%,#5c3f8a 53%,#aa2d88 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #2db7aa 1%,#5c3f8a 53%,#aa2d88 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2db7aa', endColorstr='#aa2d88',GradientType=0 ); /* IE6-9 */
+
+}
+.animated_score .animated_score_move .flip1{
+	background-image: none;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+	-webkit-animation: resize .5s linear infinite .5s;
+  	-moz-animation:    resize .5s linear infinite .5s;
+  	-o-animation:      resize .5s linear infinite .5s; 
+  	animation:         resize .5s linear infinite .5s;
+}
+.animated_score .animated_score_move .flip2{
+	background-image: none;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: contain;
+    width: 60%;
+    padding: 20%;
+    height: 60%;
+    -webkit-animation: glow_two .1s linear infinite .5s;
+  	-moz-animation:    glow_two .1s linear infinite .5s;
+  	-ms-animation:      glow_two .1s linear infinite .5s; 
+  	-o-animation:      glow_two .1s linear infinite .5s; 
+  	animation:         glow_two .1s linear infinite .5s;
+}
+
+
+/*.animated_score_explode{
+	float: right;
+	-webkit-animation: exploding .4s;
+  	-moz-animation:    exploding .4s;
+  	-o-animation:      exploding .4s; 
+  	animation:         exploding .4s;
+	transform-origin: center;
+	background-image: url(../images/explosion.png);
+	background-repeat: no-repeat;
+	-webkit-background-size: contain;
+	background-size: contain;
+	width: 5px;
+	height: 5px;
+}*/
+
+
+.animated_score .ball-explode-1{
+    -webkit-animation: throwout1 .7s linear;
+  	-moz-animation:    throwout1 .7s linear;
+  	-ms-animation:      throwout1 .7s linear; 
+  	-o-animation:      throwout1 .7s linear; 
+  	animation:         throwout1 .7s linear;
+  	opacity: 0;
+}
+
+.animated_score .ball-explode-2{
+    -webkit-animation: throwout2 .7s linear;
+  	-moz-animation:    throwout2 .7s linear;
+  	-ms-animation:      throwout2 .7s linear; 
+  	-o-animation:      throwout2 .7s linear; 
+  	animation:         throwout2 .7s linear;
+  	opacity: 0;
+}
+
+.animated_score .ball-explode-3{
+    -webkit-animation: throwout3 .7s linear;
+  	-moz-animation:    throwout3 .7s linear;
+  	-ms-animation:      throwout3 .7s linear; 
+  	-o-animation:      throwout3 .7s linear; 
+  	animation:         throwout3 .7s linear;
+  	opacity: 0;
+}
+
+.animated_score .ball-explode-4{
+    -webkit-animation: throwout4 .7s linear;
+  	-moz-animation:    throwout4 .7s linear;
+  	-ms-animation:      throwout4 .7s linear; 
+  	-o-animation:      throwout4 .7s linear; 
+  	animation:         throwout4 .7s linear;
+  	opacity: 0;
+}
+
+.animated_score .ball-explode-5{
+    -webkit-animation: throwout5 .7s linear;
+  	-moz-animation:    throwout5 .7s linear;
+  	-ms-animation:      throwout5 .7s linear; 
+  	-o-animation:      throwout5 .7s linear; 
+  	animation:         throwout5 .7s linear;
+  	opacity: 0;
+}
+
+
+
+
+@-webkit-keyframes fullwidth{
+	0%{
+		width: 0;
+	}
+	100%{
+		width: 100%;
+	}
+}
+
+@-ms-keyframes fullwidth{
+	0%{
+		width: 0;
+	}
+	100%{
+		width: 100%;
+	}
+}
+
+@-moz-keyframes fullwidth{
+	0%{
+		width: 0;
+	}
+	100%{
+		width: 100%;
+	}
+}
+
+@-o-keyframes fullwidth{
+	0%{
+		width: 0;
+	}
+	100%{
+		width: 100%;
+	}
+}
+
+@keyframes fullwidth{
+	0%{
+		width: 0;
+	}
+	100%{
+		width: 100%;
+	}
+}
+
+
+
+
+@keyframes throwout1{
+	0%{
+		transform: translate(0, 0);
+		opacity: 1;
+		scale(1);
+	}
+	100%{
+		transform: translate(300%, -350%);
+		opacity: 0;
+		scale(1.3);
+	}
+}
+
+@keyframes throwout2{
+	0%{
+		transform: translate(0, 0);
+		opacity: 1;
+		scale(1);
+	}
+	100%{
+		transform: translate(-330%, 310%);
+		opacity: 0;
+		scale(1.3);
+	}
+}
+
+@keyframes throwout3{
+	0%{
+		transform: translate(0, 0);
+		opacity: 1;
+		scale(1);
+	}
+	100%{
+		transform: translate(-360%, -330%);
+		opacity: 0;
+		scale(1.3);
+	}
+}
+
+
+@keyframes throwout4{
+	0%{
+		transform: translate(0, 0);
+		opacity: 1;
+		scale(1);
+	}
+	100%{
+		transform: translate(380%, 390%);
+		opacity: 0;
+		scale(1.3);
+	}
+}
+
+@keyframes throwout5{
+	0%{
+		transform: translate(0, 0);
+		opacity: 1;
+		scale(1);
+	}
+	100%{
+		transform: translate(-380%, 390%);
+		opacity: 0;
+		scale(1.3);
+	}
 }

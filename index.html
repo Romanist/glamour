@@ -431,11 +431,15 @@
 				menth_caps_counter = 0;				
 			};
 
-		 	$('.animated_score_move').on('animationend ',   
+		 	$('.animated_score_move').on('animationend oAnimationEnd  webkitAnimationEnd',   
   				function(e) {
-    			$('.animated_score_explode_hide').addClass("animated_score_explode").removeClass('animated_score_explode_hide');
+    			$('.animated_score .balls').eq(0).addClass("ball-explode-1");
+    			$('.animated_score .balls').eq(1).addClass("ball-explode-2");
+    			$('.animated_score .balls').eq(2).addClass("ball-explode-3");
+    			$('.animated_score .balls').eq(3).addClass("ball-explode-4");
+    			$('.animated_score .balls').eq(4).addClass("ball-explode-5");
 
-    			$('.animated_score_explode').one('animationend ',   
+    			$('.ball-explode-5').on('animationend oAnimationEnd  webkitAnimationEnd',   
   				function(e) {
     				$('.game').hide();
     				$('.st_page_right .menthols').css({'float' : 'left'});
@@ -447,6 +451,7 @@
   				});
   				// setTimeout(func,3500);
   			});
+
 		 	
   		 	$(function(){
 				$(document).on('click', '.after_game .cig_pack_bg_cont', finish);
