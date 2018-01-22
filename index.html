@@ -2,28 +2,41 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="viewport" content="width=1920px, height=1200px, initial-scale=1.0">
+	<!-- <meta content="width=1600px, height = 800px, initial-scale=2.47, maximum-scale=3.0, user-scalable=1" name="viewport"> -->
 	<title>kurit' vredno</title>
 	<link rel="stylesheet" type="text/css" href="styles/main.css">
+	<!-- <link rel="stylesheet" type="text/css" href="styles/new_main.css"> -->
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 </head>
 <body>
-	<section class="non_game condition_1 non_displayed">
+	<section class="non_game condition_1">
 		<div class="st_page">
 			<div class="cig_pack st_page_left">
-				<div class="cig_pack_bg_cont"></div>
-				<div class="cig_pack_capsule non_displayed"></div>
-				<div class="???">
-					
+				<div class="cig_pack_bg_cont">
+					<div class="cig_pack_bg_cont_caps animated_caps_spin">
+						<div><div class="back_flip"><div class="deep_b_f"></div></div></div>
+					</div>
+					<div class="cig_pack_bg_cont_taste"><div><div class="shine"></div></div></div>
 				</div>
-				<p class="cig_pack_caption non_displayed">ягодный вкус</p>
+				<div class="cig_pack_capsule non_displayed">
+
+				</div>
+				<!-- изменил название класса с ??? на berries и добавил в этот блок картинки -->
+				<div class="berries">
+					<img class="one" src="images/grape.png" alt="grape">
+					<img class="two" src="images/raspberry.png" alt="rasp_berry">
+					<img class="three" src="images/blueberry.png" alt="blue_berry">
+					<img class="four" src="images/blueberry.png" alt="blue_berry">
+				</div>
+				<p class="cig_pack_caption">ягодный вкус</p>
 			</div>
 			<div class="st_page_center">
 				<h1>
 					раскройте вкус капсул <span>glamour!</span>
 				</h1>
 				<h3>
-					жмите на капсулу
+					жмите <br> на капсулу
 				</h3>
 				<div class="st_page_center_cond2_into3 non_displayed">
 					<img class="expl_caps" src="images/expl_caps.png">
@@ -33,12 +46,22 @@
 				</div>
 			</div>
 			<div class="cig_pack st_page_right">
-				<div class="cig_pack_bg_cont"></div>
-				<div class="cig_pack_capsule non_displayed"></div>
-				<div class="???">
-					
+				<div class="cig_pack_bg_cont">
+					<div class="cig_pack_bg_cont_caps animated_caps_spin"><div><div class="back_flip"><div class="deep_b_f"></div></div></div></div>
+					<div class="cig_pack_bg_cont_taste"><div><div class="shine"></div></div></div>
 				</div>
-				<p class="cig_pack_caption non_displayed">ментоловый вкус</p>
+				<div class="cig_pack_capsule non_displayed">
+					<!-- добавил картинку ментола внутри голубого шара  -->
+					<img class="bigMenthol" src="images/mentol.png" alt="mentol">
+				</div>
+				<!-- изменил название класса с ??? на mentols и добавил в этот блок картинки -->
+				<div class="menthols">
+					<img class="one" src="images/list_1.png" alt="list_1">
+					<img class="two" src="images/list_2.png" alt="list_2">
+					<img class="three" src="images/list_2.png" alt="list_3">
+					<img class="four" src="images/list_3.png" alt="list_4">
+				</div>
+				<p class="cig_pack_caption">ментоловый вкус</p>
 			</div>
 			<div class="st_page_none non_displayed">
 				технология lss
@@ -61,12 +84,12 @@
 					поздравляем!
 				</h2>
 				<h3>
-					Вы узнали вкус капсул <span>glamour secret:</span> <span class="underline">ягода</span> и <span class="underline">ментол.</span>
+					Вы узнали вкус капсул <span>glamour secret:<br></span> <span class="underline shine">ягода<div><div class="grad"></div></div></span> и <span class="underline shine">ментол.<div><div class="grad"></div></div></span>
 				</h3>
 			</div>
 		</div>
 	</section>
-	<section class="game" style="display: block;">	
+	<section class="game">	
 		<div class="game_bg"></div>
 		<div class="game_score">
 			<h2>ловите капсулы</h2>
@@ -76,57 +99,58 @@
 				<div class="balls ball_3"></div>
 				<div class="balls ball_4"></div>
 				<div class="balls ball_5"></div>
-				<div class="animated_score_move"></div>
+				<div class="animated_score_move"><div class="flip1"><div class="flip2"></div></div>
+				</div>
 			</div>
 			<div class="animated_score_explode_hide"></div>
 		</div>
 		<div class="game_violet_capsule">
-			<div class="violet_capsule_1"></div>
-			<div class="violet_capsule_2"></div>
-			<div class="violet_capsule_3"></div>
-			<div class="violet_capsule_4"></div>
-			<div class="violet_capsule_5"></div>
-			<div class="violet_capsule_6"></div>
-			<div class="violet_capsule_7"></div>
-			<div class="violet_capsule_8"></div>
-			<div class="violet_capsule_9"></div>
-			<div class="violet_capsule_10"></div>
-			<div class="violet_capsule_11"></div>
-			<div class="violet_capsule_12"></div>
-			<div class="violet_capsule_13"></div>
-			<div class="violet_capsule_14"></div>
-			<div class="violet_capsule_15"></div>
-			<div class="violet_capsule_16"></div>
-			<div class="violet_capsule_17"></div>
-			<div class="violet_capsule_18"></div>
-			<div class="violet_capsule_19"></div>
-			<div class="violet_capsule_20"></div>
+			<div class="violet_capsule_1"><div class="hidden_treasure"></div></div>
+			<div class="violet_capsule_2"><div class="hidden_treasure"></div></div>
+			<div class="violet_capsule_3"><div class="hidden_treasure"></div></div>
+			<div class="violet_capsule_4"><div class="hidden_treasure"></div></div>
+			<div class="violet_capsule_5"><div class="hidden_treasure"></div></div>
+			<div class="violet_capsule_6"><div class="hidden_treasure"></div></div>
+			<div class="violet_capsule_7"><div class="hidden_treasure"></div></div>
+			<div class="violet_capsule_8"><div class="hidden_treasure"></div></div>
+			<div class="violet_capsule_9"><div class="hidden_treasure"></div></div>
+			<div class="violet_capsule_10"><div class="hidden_treasure"></div></div>
+			<div class="violet_capsule_11"><div class="hidden_treasure"></div></div>
+			<div class="violet_capsule_12"><div class="hidden_treasure"></div></div>
+			<div class="violet_capsule_13"><div class="hidden_treasure"></div></div>
+			<div class="violet_capsule_14"><div class="hidden_treasure"></div></div>
+			<div class="violet_capsule_15"><div class="hidden_treasure"></div></div>
+			<div class="violet_capsule_16"><div class="hidden_treasure"></div></div>
+			<div class="violet_capsule_17"><div class="hidden_treasure"></div></div>
+			<div class="violet_capsule_18"><div class="hidden_treasure"></div></div>
+			<div class="violet_capsule_19"><div class="hidden_treasure"></div></div>
+			<div class="violet_capsule_20"><div class="hidden_treasure"></div></div>
 		</div>
 		<div class="game_menthole_capsule">
-			<div class="menthole_capsule_1"></div>
-			<div class="menthole_capsule_2"></div>
-			<div class="menthole_capsule_3"></div>
-			<div class="menthole_capsule_4"></div>
-			<div class="menthole_capsule_5"></div>
-			<div class="menthole_capsule_6"></div>
-			<div class="menthole_capsule_7"></div>
-			<div class="menthole_capsule_8"></div>
-			<div class="menthole_capsule_9"></div>
-			<div class="menthole_capsule_10"></div>
-			<div class="menthole_capsule_11"></div>
-			<div class="menthole_capsule_12"></div>
-			<div class="menthole_capsule_13"></div>
-			<div class="menthole_capsule_14"></div>
-			<div class="menthole_capsule_15"></div>
-			<div class="menthole_capsule_16"></div>
-			<div class="menthole_capsule_17"></div>
-			<div class="menthole_capsule_18"></div>
-			<div class="menthole_capsule_19"></div>
-			<div class="menthole_capsule_20"></div>
+			<div class="menthole_capsule_1"><div class="hidden_treasure"></div></div>
+			<div class="menthole_capsule_2"><div class="hidden_treasure"></div></div>
+			<div class="menthole_capsule_3"><div class="hidden_treasure"></div></div>
+			<div class="menthole_capsule_4"><div class="hidden_treasure"></div></div>
+			<div class="menthole_capsule_5"><div class="hidden_treasure"></div></div>
+			<div class="menthole_capsule_6"><div class="hidden_treasure"></div></div>
+			<div class="menthole_capsule_7"><div class="hidden_treasure"></div></div>
+			<div class="menthole_capsule_8"><div class="hidden_treasure"></div></div>
+			<div class="menthole_capsule_9"><div class="hidden_treasure"></div></div>
+			<div class="menthole_capsule_10"><div class="hidden_treasure"></div></div>
+			<div class="menthole_capsule_11"><div class="hidden_treasure"></div></div>
+			<div class="menthole_capsule_12"><div class="hidden_treasure"></div></div>
+			<div class="menthole_capsule_13"><div class="hidden_treasure"></div></div>
+			<div class="menthole_capsule_14"><div class="hidden_treasure"></div></div>
+			<div class="menthole_capsule_15"><div class="hidden_treasure"></div></div>
+			<div class="menthole_capsule_16"><div class="hidden_treasure"></div></div>
+			<div class="menthole_capsule_17"><div class="hidden_treasure"></div></div>
+			<div class="menthole_capsule_18"><div class="hidden_treasure"></div></div>
+			<div class="menthole_capsule_19"><div class="hidden_treasure"></div></div>
+			<div class="menthole_capsule_20"><div class="hidden_treasure"></div></div>
 		</div>
 	</section>
 	<footer>
-		
+		<!-- защитите детей от табачного дыма -->
 	</footer>
 
 	<script type="text/javascript">
@@ -142,8 +166,130 @@
 				})
 			});
 			$(function(){
-				$('.cig_pack').click(function(){
-					$('.cig_pack_capsule').removeClass('non_displayed');
+				$('.st_page_right .cig_pack_bg_cont .cig_pack_bg_cont_caps ').click(function(){
+					$(this).addClass('non_displayed');
+					$('.non_game').addClass('condition_1_right');
+				})
+			});
+			$(function(){
+				$('.st_page_left .cig_pack_bg_cont .cig_pack_bg_cont_caps ').click(function(){
+					$(this).addClass('non_displayed');
+					$('.non_game').addClass('condition_1_left');
+				})
+			});
+			
+			$(function(){
+				$('.st_page_right .cig_pack_bg_cont .cig_pack_bg_cont_caps').click(function(){
+					$('.st_page_right .cig_pack_capsule').removeClass('non_displayed');
+					capsule_counter++;
+					$('.bigMenthol').removeClass('visOne visTwo visThree visFour');
+					$('.st_page_right .menthols').css({'float' : 'none'});
+					$('.menthols .one').addClass('enable');
+					$('.menthols .one').on('animationed webkitAnimationEnd oAnimationEnd', function () {
+						$(this).removeClass('enable');
+						$(this).addClass('vis');
+
+						$('.bigMenthol').addClass('enableOne');
+						$('.bigMenthol').on('animationed webkitAnimationEnd oAnimationEnd', function () {
+							$(this).removeClass('enableOne');
+							$('.bigMenthol').removeClass('visTwo visThree visFour');
+							$(this).addClass('visOne');
+						});
+					});
+					$('.menthols .two').addClass('enable');
+					$('.menthols .two').on('animationed webkitAnimationEnd oAnimationEnd', function () {
+						$(this).removeClass('enable');
+						$(this).addClass('vis');
+
+						$('.bigMenthol').removeClass('visOne');
+						$('.bigMenthol').addClass('enableTwo');
+						$('.bigMenthol').on('animationed webkitAnimationEnd oAnimationEnd', function () {
+							$(this).removeClass('enableTwo');
+							$('.bigMenthol').removeClass('visThree visFour');
+							$(this).addClass('visTwo');
+						});
+					});
+					$('.menthols .three').addClass('enable');
+					$('.menthols .three').on('animationed webkitAnimationEnd oAnimationEnd', function () {
+						$(this).removeClass('enable');
+						$(this).addClass('vis');
+
+						$('.bigMenthol').removeClass('visTwo')
+						$('.bigMenthol').addClass('enableThree');
+						$('.bigMenthol').on('animationed webkitAnimationEnd oAnimationEnd', function () {
+							$(this).removeClass('enableThree');
+							$('.bigMenthol').removeClass('visFour');
+							$(this).addClass('visThree');
+						});
+					});
+					$('.menthols .four').addClass('enable');
+					$('.menthols .four').on('animationed webkitAnimationEnd oAnimationEnd', function () {
+						$(this).removeClass('enable');
+						$(this).addClass('vis');
+
+						$('.bigMenthol').removeClass('visThree');
+						$('.bigMenthol').addClass('enableFour');
+						$('.bigMenthol').on('animationed webkitAnimationEnd oAnimationEnd', function () {
+							$(this).removeClass('enableFour');
+							$(this).addClass('visFour');
+							$('.st_page_right .cig_pack_caption').addClass('enable');
+							$('.st_page_right .cig_pack_caption').on('animationed webkitAnimationEnd oAnimationEnd', function () {
+								// $(this).removeClass('enable');
+								$(this).addClass('vis');
+								$('.menthols .one').removeClass('enable');
+								$('.menthols .two').removeClass('enable');
+								$('.menthols .three').removeClass('enable');
+								$('.menthols .four').removeClass('enable');
+								
+								// console.log(capsule_counter)
+								if (capsule_counter==2) {
+									$('.st_page_center_cond2_into3').removeClass('non_displayed');
+									$('.st_page_center h3').addClass('non_displayed');
+								}
+							});
+						});
+					});
+				})
+			});
+			$(function(){
+				$('.st_page_left .cig_pack_bg_cont .cig_pack_bg_cont_caps').click(function(){
+					capsule_counter++;
+					$('.st_page_left .cig_pack_capsule').removeClass('non_displayed');
+					$('.st_page_left .berries').css({'float' : 'none'});
+					$('.berries .one').addClass('enable');
+					$('.berries .one').on('animationed webkitAnimationEnd oAnimationEnd', function () {
+						$(this).removeClass('enable');
+						$(this).addClass('vis');
+					});
+					$('.berries .two').addClass('enable');
+					$('.berries .two').on('animationed webkitAnimationEnd oAnimationEnd', function () {
+						$(this).removeClass('enable');
+						$(this).addClass('vis');
+					});
+					$('.berries .three').addClass('enable');
+					$('.berries .three').on('animationed webkitAnimationEnd oAnimationEnd', function () {
+						$(this).removeClass('enable');
+						$(this).addClass('vis');
+					});
+					$('.berries .four').addClass('enable');
+					$('.berries .four').on('animationed webkitAnimationEnd oAnimationEnd', function () {
+						$(this).removeClass('enable');
+						$(this).addClass('vis');
+							
+						$('.st_page_left .cig_pack_caption').addClass('enable');
+						$('.st_page_left .cig_pack_caption').on('animationed webkitAnimationEnd oAnimationEnd', function () {
+							$(this).removeClass('enable');
+							$(this).addClass('vis');
+							$('.berries .one').removeClass('enable');
+							$('.berries .two').removeClass('enable');
+							$('.berries .three').removeClass('enable');
+							$('.berries .four').removeClass('enable');
+								if (capsule_counter==2) {
+								$('.st_page_center_cond2_into3').removeClass('non_displayed');
+								$('.st_page_center h3').addClass('non_displayed');
+							}
+						});
+					});
 				})
 			});
 			// $(function(){
@@ -151,29 +297,30 @@
 			// 		$('.non_game').addClass('condition_2').removeClass('condition_1');
 			// 	})
 			// });
-			$(function(){
-				$('.st_page_right .cig_pack_capsule').one("click",(function(){
-					$('.st_page_right .cig_pack_caption').removeClass('non_displayed');
-					capsule_counter++;
-					if (capsule_counter==2) {
-						$('.st_page_center_cond2_into3').removeClass('non_displayed');
-						$('.st_page_center h3').addClass('non_displayed');
-					}
-				}));
-			});
-			$(function(){
-				$('.st_page_left .cig_pack_capsule').one("click",(function(){
-					$('.st_page_left .cig_pack_caption').removeClass('non_displayed');
-					capsule_counter++;
-					if (capsule_counter==2) {
-						$('.st_page_center_cond2_into3').removeClass('non_displayed');
-						$('.st_page_center h3').addClass('non_displayed');
-					}
-				}));
-			});
+			// $(function(){
+			// 	$('.st_page_right .cig_pack_capsule').one("click",(function(){
+			// 		$('.st_page_right .cig_pack_caption').removeClass('non_displayed');
+			// 		capsule_counter++;
+			// 		if (capsule_counter==2) {
+			// 			$('.st_page_center_cond2_into3').removeClass('non_displayed');
+			// 			$('.st_page_center h3').addClass('non_displayed');
+			// 		}
+			// 	}));
+			// });
+			// $(function(){
+			// 	$('.st_page_left .cig_pack_capsule').one("click",(function(){
+			// 		$('.st_page_left .cig_pack_caption').removeClass('non_displayed');
+			// 		capsule_counter++;
+			// 		if (capsule_counter==2) {
+			// 			$('.st_page_center_cond2_into3').removeClass('non_displayed');
+			// 			$('.st_page_center h3').addClass('non_displayed');
+			// 		}
+			// 	}));
+			// });
 			$(function(){
 				$('.st_page_center_cond2_into3').click(function(){
-					$('.non_game').addClass('condition_2').removeClass('condition_1');
+					$('.non_game').addClass('condition_2').removeClass('condition_1').removeClass('condition_1_left').removeClass('condition_1_right');
+					$('.berries').addClass('non_displayed')
 				})
 			});
 			$(function(){
@@ -181,64 +328,130 @@
 					$('.non_game').addClass('condition_3').removeClass('condition_2');
 					$('.cig_pack_caption').addClass('non_displayed');
 					$('.game').show();
+					function Timer(){
+						$('.game_score_balls').addClass("animated_score").removeClass("game_score_balls");
+		 				$('.game_menthole_capsule div').addClass('nope');
+					}
+					timer = setTimeout(Timer,60000);
+
 				})
 			});
 			$(function(){
 		 		$('.game_menthole_capsule div').click(function(){
-						// $(this).hide();
-						// var r = this;
-						// menth_caps_counter++;
-						// common_counter = violet_caps_counter + menth_caps_counter;
-						// $('.ball_'+ common_counter).addClass("m_balls");
-						// function func() {
-						//  	$(r).show();
-						// }
-						// setTimeout(animate_score_delay, 500);
+		 			if (common_counter<5){
 						$(this).addClass('game_menthole_capsule_expl');
-
+						var r = this;
+						menth_caps_counter++;
+						common_counter = violet_caps_counter + menth_caps_counter;
+						$('.ball_'+ common_counter).addClass("m_balls");
+						function func() {
+						 	$(r).removeClass('game_menthole_capsule_expl');
+						 	$(r).hide();
+						}
+						function funct() {
+						 	$(r).show();
+						}
+						setTimeout(func,500);
+						setTimeout(funct,5000);
+						// setTimeout(animate_score_delay, 500);
+					}
+						
 						function animate_score_delay(){
 
 							if (common_counter == 5) {
 		 						$('.game_score_balls').addClass("animated_score").removeClass("game_score_balls");
+		 						$('.game_menthole_capsule div').addClass('nope');
 		 					}
+		 				}
+		 				if (common_counter == 5) {
+		 					setTimeout(animate_score_delay, 500);
 		 				}
 				});
 		 	});
 		 	$(function(){
 		 		$('.game_violet_capsule div').click(function(){
-						$(this).hide();
+		 			if (common_counter<5){
+						$(this).addClass('game_violet_capsule_expl');
 						var r = this;
-						// console.log(r);
 						violet_caps_counter++;
 						common_counter = violet_caps_counter + menth_caps_counter;
 						$('.ball_'+ common_counter).addClass("v_balls");
 						function func() {
+						 	$(r).removeClass('game_violet_capsule_expl');
+						 	$(r).hide();
+						}
+						function funct() {
 						 	$(r).show();
 						}
-						setTimeout(animate_score_delay, 500);
-
+						setTimeout(func,500);
+						setTimeout(funct,5000);
+					}
 						function animate_score_delay(){
 						
 							if (common_counter == 5) {
 		 						$('.game_score_balls').addClass("animated_score").removeClass("game_score_balls");
+		 						$('.game_violet_capsule div').addClass('nope');
 		 					}
 		 				}
+		 				if (common_counter == 5) {
+		 					setTimeout(animate_score_delay, 500);
+		 				}
+		 		
 				});
 		 	});
 
-		 	$('.animated_score_move').one('animationend ',   
+		 	function finish(){				
+				$('.non_game').addClass('condition_1').removeClass('condition_2');
+				$('.st_page').removeClass('after_game');
+				$('.st_page_none').addClass('non_displayed');
+				$('.cig_pack_capsule ').addClass('non_displayed');
+				$('.cig_pack_caption ').removeClass('vis');
+				$('.st_page_right .cig_pack_caption').removeClass('enable');
+				$('.st_page_center_cond2_into3 ').addClass('non_displayed');
+				$('.st_page_center h3').removeClass('non_displayed');
+				$('.cig_pack_bg_cont_caps.animated_caps_spin ').removeClass('non_displayed');
+				$('.st_page_right .menthols').css({'float' : 'left'});
+				$('.st_page_left .berries').css({'float' : 'left'});
+				$('.berries').removeClass('non_displayed');
+				$('.berries img').removeClass('vis');
+				$('.menthols img').removeClass('vis');
+				$('.cig_pack_caption').removeClass('enable non_displayed');
+				$('.add_part  ').removeClass('after_game');
+				$('.animated_score').addClass("game_score_balls").removeClass("animated_score");
+				$('.balls').removeClass('v_balls m_balls');
+				$('.animated_score_explode').addClass("animated_score_explode_hide").removeClass('animated_score_explode');
+				$('.game_menthole_capsule div').removeClass('nope');
+				$('.cig_pack_bg_cont_taste').addClass('non_displayed');
+				$('.cig_pack_bg_cont_taste').removeClass('non_displayed');
+				clearTimeout(timer);
+				clearTimeout(timer2);
+				capsule_counter = 0;
+				common_counter = 0;	
+				violet_caps_counter = 0;
+				menth_caps_counter = 0;				
+			};
+
+		 	$('.animated_score_move').on('animationend ',   
   				function(e) {
     			$('.animated_score_explode_hide').addClass("animated_score_explode").removeClass('animated_score_explode_hide');
 
     			$('.animated_score_explode').one('animationend ',   
   				function(e) {
     				$('.game').hide();
+    				$('.st_page_right .menthols').css({'float' : 'left'});
     				$('.non_game').addClass("condition_2").removeClass('condition_3');
     				$('.add_part').addClass("after_game");
+    				$('.st_page').addClass("after_game");
     				$('.st_page_none').removeClass('non_displayed');
+    				timer2 = setTimeout(finish,32000);
   				});
   				// setTimeout(func,3500);
   			});
+		 	
+  		 	$(function(){
+				$(document).on('click', '.after_game .cig_pack_bg_cont', finish);
+			});
+		 	
 
   			// $('.animated_score_explode').one('animationend ',   
   			// 	function(e) {
