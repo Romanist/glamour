@@ -840,11 +840,11 @@ footer {
 
 .add_part_start div {
 	/*animation: falling_up 2s ease;*/
-	-webkit-animation: falling_up 2s ease;
-	-moz-animation: falling_up 2s ease;
-	-ms-animation: falling_up 2s ease;
-	-o-animation: falling_up 2s ease;
-	animation: falling_up 2s ease;
+	-webkit-animation: falling_up 3s ease-out;
+	-moz-animation: falling_up 3s ease-out;
+	-ms-animation: falling_up 3s ease-out;
+	-o-animation: falling_up 3s ease-out;
+	animation: falling_up 3s ease-out;
 }
 
 @-webkit-keyframes falling_up {
@@ -852,7 +852,7 @@ footer {
 		margin-top: 3000px;
 	}
 	60% {
-		margin-top: 3000px;
+		margin-top: 2000px;
 	}
 	100% {
 		margin-top: 0;
@@ -864,7 +864,7 @@ footer {
 		margin-top: 3000px;
 	}
 	60% {
-		margin-top: 3000px;
+		margin-top: 2000px;
 	}
 	100% {
 		margin-top: 0;
@@ -876,7 +876,7 @@ footer {
 		margin-top: 3000px;
 	}
 	60% {
-		margin-top: 3000px;
+		margin-top: 2000px;
 	}
 	100% {
 		margin-top: 0;
@@ -888,7 +888,7 @@ footer {
 		margin-top: 3000px;
 	}
 	60% {
-		margin-top: 3000px;
+		margin-top: 2000px;
 	}
 	100% {
 		margin-top: 0;
@@ -901,7 +901,7 @@ footer {
 		margin-top: 3000px;
 	}
 	60% {
-		margin-top: 3000px;
+		margin-top: 2000px;
 	}
 	100% {
 		margin-top: 0;
@@ -914,7 +914,7 @@ footer {
 	-moz-animation: falling_down 1s ease;
 	-ms-animation: falling_down 1s ease;
 	-o-animation: falling_down 1s ease;
-	animation: falling_down 1s ease;
+	animation: falling_down 2s ease;
 }
 
 
@@ -2285,7 +2285,7 @@ footer {
 	0% {
 		opacity: 0;
 	}
-	80% {
+	50% {
 		opacity: 0;
 	}
 	100% {
@@ -2297,7 +2297,7 @@ footer {
 	0% {
 		opacity: 0;
 	}
-	80% {
+	50% {
 		opacity: 0;
 	}
 	100% {
@@ -2309,7 +2309,7 @@ footer {
 	0% {
 		opacity: 0;
 	}
-	80% {
+	50% {
 		opacity: 0;
 	}
 	100% {
@@ -2321,7 +2321,7 @@ footer {
 	0% {
 		opacity: 0;
 	}
-	80% {
+	50% {
 		opacity: 0;
 	}
 	100% {
@@ -2333,7 +2333,7 @@ footer {
 	0% {
 		opacity: 0;
 	}
-	80% {
+	50% {
 		opacity: 0;
 	}
 	100% {
