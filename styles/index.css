@@ -101,6 +101,7 @@ html {
 body {
 	width: 1920px;
 	height: 1200px;
+	background-image:url(../images/bg.png);
 }
 
 body {
@@ -1758,6 +1759,117 @@ footer {
 		transform: scale(1, 1);
 	}
 }
+
+
+
+
+
+
+
+
+
+
+
+@-webkit-keyframes explosion1 {
+	0% {
+		opacity:1;
+		width: 10px;
+		height: 10px;
+		margin: 40px 0 0 50px;
+	}
+	70% {
+		opacity:1;
+		width: 160px;
+		height: 160px;
+		margin: -40px 0 0 -20px;
+	}
+	100% {
+		margin: -40px 0 0 -20px;
+	}
+}
+
+@-moz-keyframes explosion1 {
+	0% {
+		opacity:1;
+		width: 10px;
+		height: 10px;
+		margin: 40px 0 0 50px;
+	}
+	70% {
+		opacity:1;
+		width: 160px;
+		height: 160px;
+		margin: -40px 0 0 -20px;
+	}
+	100% {
+
+		margin: -40px 0 0 -20px;
+	}
+}
+
+@-o-keyframes explosion1 {
+	0% {
+		opacity:1;
+		width: 10px;
+		height: 10px;
+		margin: 40px 0 0 50px;
+	}
+	70% {
+		opacity:1;
+		width: 160px;
+		height: 160px;
+		margin: -40px 0 0 -20px;
+	}
+	100% {
+
+		margin: -40px 0 0 -20px;
+	}
+}
+
+@-ms-keyframes explosion1 {
+	0% {
+		opacity:1;
+		width: 10px;
+		height: 10px;
+		margin: 40px 0 0 50px;
+	}
+	70% {
+		opacity:1;
+		width: 160px;
+		height: 160px;
+		margin: -40px 0 0 -20px;
+	}
+	100% {
+
+		margin: -40px 0 0 -20px;
+	}
+}
+
+@keyframes explosion1 {
+	0% {
+		opacity:1;
+		width: 10px;
+		height: 10px;
+		margin: 40px 0 0 50px;
+	}
+	70% {
+		opacity:1;
+		width: 160px;
+		height: 160px;
+		margin: -40px 0 0 -20px;
+	}
+	100% {
+	
+		margin: -40px 0 0 -20px;
+	}
+}
+
+
+
+
+
+
+
 
 @-webkit-keyframes sec_cond {
 	0% {
@@ -3545,7 +3657,7 @@ footer {
   	animation:         fadeout .5s linear;
 }
 .animated_score .animated_score_move{
-	-webkit-animation: fullwidth 1.5s linear;
+	/*-webkit-animation: fullwidth 1.5s linear;
   	-moz-animation:    fullwidth 1.5s linear;
   	-ms-animation:      fullwidth 1.5s linear; 
   	-o-animation:      fullwidth 1.5s linear; 
@@ -3556,14 +3668,336 @@ footer {
     position: relative;
     top:0;
     left:0;
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#2db7aa+1,5c3f8a+53,aa2d88+100 */
-background: #2db7aa; /* Old browsers */
-background: -moz-linear-gradient(top, #2db7aa 1%, #5c3f8a 53%, #aa2d88 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top, #2db7aa 1%,#5c3f8a 53%,#aa2d88 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom, #2db7aa 1%,#5c3f8a 53%,#aa2d88 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2db7aa', endColorstr='#aa2d88',GradientType=0 ); /* IE6-9 */
-
+    
+background: #2db7aa; 
+background: -moz-linear-gradient(top, #2db7aa 1%, #5c3f8a 53%, #aa2d88 100%);
+background: -webkit-linear-gradient(top, #2db7aa 1%,#5c3f8a 53%,#aa2d88 100%); 
+background: linear-gradient(to bottom, #2db7aa 1%,#5c3f8a 53%,#aa2d88 100%); 
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2db7aa', endColorstr='#aa2d88',GradientType=0 ); 
+*/
 }
+
+
+.animated_score{
+	-webkit-animation: spaceboots .8s linear;
+	-webkit-transform-origin: 50% 50%;
+	-moz-animation: spaceboots .8s linear;
+	-moz-transform-origin: 50% 50%;
+	-o-animation: spaceboots .8s linear;
+	-o-transform-origin: 50% 50%;
+	-ms-animation: spaceboots .8s linear;
+	-ms-transform-origin: 50% 50%;
+	animation: spaceboots .8s linear;
+	transform-origin: 50% 50%;
+    animation-iteration-count: 3;
+}
+
+
+
+.hidden_treasure_status {
+	opacity: 0;
+	width: 160px;
+	height: 160px;
+	margin: -40px 0 0 -20px;
+}
+
+.ball-explode-1 .hidden_treasure_status{
+	background-image: url(../images/expl.png);
+	opacity: 1;
+	-webkit-transform-origin: center;
+	-moz-transform-origin: center;
+	-ms-transform-origin: center;
+	-o-transform-origin: center;
+	transform-origin: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	-webkit-animation: explosion1 .8s ease;
+	-moz-animation: explosion1 .8s ease;
+	-ms-animation: explosion1 .8s ease;
+	-o-animation: explosion1 .8s ease;
+	animation: explosion1 .8s ease;
+	/*-webkit-animation-delay: .3s;
+	-moz-animation-delay: .3s;
+	-o-animation-delay: .3s;
+	-ms-animation-delay: .3s;
+	animation-delay: .3s;*/
+}
+
+.ball-explode-2 .hidden_treasure_status{
+	background-image: url(../images/expl.png);
+	opacity: 1;
+	/*margin-top: 120px;
+	margin-left: 55px;*/
+	-webkit-transform-origin: center;
+	-moz-transform-origin: center;
+	-ms-transform-origin: center;
+	-o-transform-origin: center;
+	transform-origin: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	-webkit-animation: explosion1 .8s ease;
+	-moz-animation: explosion1 .8s ease;
+	-ms-animation: explosion1 .8s ease;
+	-o-animation: explosion1 .8s ease;
+	animation: explosion1 .8s ease;
+}
+
+.ball-explode-3 .hidden_treasure_status{
+	background-image: url(../images/expl.png);
+	opacity: 1;
+	/*margin-top: 120px;
+	margin-left: 55px;*/
+	-webkit-transform-origin: center;
+	-moz-transform-origin: center;
+	-ms-transform-origin: center;
+	-o-transform-origin: center;
+	transform-origin: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	-webkit-animation: explosion1 .8s ease;
+	-moz-animation: explosion1 .8s ease;
+	-ms-animation: explosion1 .8s ease;
+	-o-animation: explosion1 .8s ease;
+	animation: explosion1 .8s ease;
+	/*-webkit-animation-delay: .4s;
+	-moz-animation-delay: .4s;
+	-o-animation-delay: .4s;
+	-ms-animation-delay: .4s;
+	animation-delay: .4s;*/
+}
+
+.ball-explode-4 .hidden_treasure_status{
+	background-image: url(../images/expl.png);
+	opacity: 1;
+	/*margin-top: 120px;
+	margin-left: 55px;*/
+	-webkit-transform-origin: center;
+	-moz-transform-origin: center;
+	-ms-transform-origin: center;
+	-o-transform-origin: center;
+	transform-origin: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	-webkit-animation: explosion1 .8s ease;
+	-moz-animation: explosion1 .8s ease;
+	-ms-animation: explosion1 .8s ease;
+	-o-animation: explosion1 .8s ease;
+	animation: explosion1 .8s ease;
+	/*-webkit-animation-delay: .2s;
+	-moz-animation-delay: .2s;
+	-o-animation-delay: .2s;
+	-ms-animation-delay: .2s;
+	animation-delay: .2s;*/
+}
+
+.ball-explode-5 .hidden_treasure_status{
+	background-image: url(../images/expl.png);
+	opacity: 1;
+	/*margin-top: 120px;
+	margin-left: 55px;*/
+	-webkit-transform-origin: center;
+	-moz-transform-origin: center;
+	-ms-transform-origin: center;
+	-o-transform-origin: center;
+	transform-origin: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	-webkit-animation: explosion1 .8s ease;
+	-moz-animation: explosion1 .8s ease;
+	-ms-animation: explosion1 .8s ease;
+	-o-animation: explosion1 .8s ease;
+	animation: explosion1 .8s ease;
+	/*-webkit-animation-delay: .5s;
+	-moz-animation-delay: .5s;
+	-o-animation-delay: .5s;
+	-ms-animation-delay: .5s;
+	animation-delay: .5s;*/
+}
+
+
+@-webkit-keyframes spaceboots {
+	0% {
+		-webkit-transform: translate(2px, 1px) rotate(0)
+	}
+	10% {
+		-webkit-transform: translate(-1px, -2px) rotate(-1deg)
+	}
+	20% {
+		-webkit-transform: translate(-3px, 0) rotate(1deg)
+	}
+	30% {
+		-webkit-transform: translate(0, 2px) rotate(0)
+	}
+	40% {
+		-webkit-transform: translate(1px, -1px) rotate(1deg)
+	}
+	50% {
+		-webkit-transform: translate(-1px, 2px) rotate(-1deg)
+	}
+	60% {
+		-webkit-transform: translate(-3px, 1px) rotate(0)
+	}
+	70% {
+		-webkit-transform: translate(2px, 1px) rotate(-1deg)
+	}
+	80% {
+		-webkit-transform: translate(-1px, -1px) rotate(1deg)
+	}
+	90% {
+		-webkit-transform: translate(2px, 2px) rotate(0)
+	}
+	100% {
+		-webkit-transform: translate(1px, -2px) rotate(-1deg)
+	}
+}
+
+@-moz-keyframes spaceboots {
+	0% {
+		-moz-transform: translate(2px, 1px) rotate(0)
+	}
+	10% {
+		-moz-transform: translate(-1px, -2px) rotate(-1deg)
+	}
+	20% {
+		-moz-transform: translate(-3px, 0) rotate(1deg)
+	}
+	30% {
+		-moz-transform: translate(0, 2px) rotate(0)
+	}
+	40% {
+		-moz-transform: translate(1px, -1px) rotate(1deg)
+	}
+	50% {
+		-moz-transform: translate(-1px, 2px) rotate(-1deg)
+	}
+	60% {
+		-moz-transform: translate(-3px, 1px) rotate(0)
+	}
+	70% {
+		-moz-transform: translate(2px, 1px) rotate(-1deg)
+	}
+	80% {
+		-moz-transform: translate(-1px, -1px) rotate(1deg)
+	}
+	90% {
+		-moz-transform: translate(2px, 2px) rotate(0)
+	}
+	100% {
+		-moz-transform: translate(1px, -2px) rotate(-1deg)
+	}
+}
+
+@-o-keyframes spaceboots {
+	0% {
+		-o-transform: translate(2px, 1px) rotate(0)
+	}
+	10% {
+		-o-transform: translate(-1px, -2px) rotate(-1deg)
+	}
+	20% {
+		-o-transform: translate(-3px, 0) rotate(1deg)
+	}
+	30% {
+		-o-transform: translate(0, 2px) rotate(0)
+	}
+	40% {
+		-o-transform: translate(1px, -1px) rotate(1deg)
+	}
+	50% {
+		-o-transform: translate(-1px, 2px) rotate(-1deg)
+	}
+	60% {
+		-o-transform: translate(-3px, 1px) rotate(0)
+	}
+	70% {
+		-o-transform: translate(2px, 1px) rotate(-1deg)
+	}
+	80% {
+		-o-transform: translate(-1px, -1px) rotate(1deg)
+	}
+	90% {
+		-o-transform: translate(2px, 2px) rotate(0)
+	}
+	100% {
+		-o-transform: translate(1px, -2px) rotate(-1deg)
+	}
+}
+
+@-ms-keyframes spaceboots {
+	0% {
+		-ms-transform: translate(2px, 1px) rotate(0)
+	}
+	10% {
+		-ms-transform: translate(-1px, -2px) rotate(-1deg)
+	}
+	20% {
+		-ms-transform: translate(-3px, 0) rotate(1deg)
+	}
+	30% {
+		-ms-transform: translate(0, 2px) rotate(0)
+	}
+	40% {
+		-ms-transform: translate(1px, -1px) rotate(1deg)
+	}
+	50% {
+		-ms-transform: translate(-1px, 2px) rotate(-1deg)
+	}
+	60% {
+		-ms-transform: translate(-3px, 1px) rotate(0)
+	}
+	70% {
+		-ms-transform: translate(2px, 1px) rotate(-1deg)
+	}
+	80% {
+		-ms-transform: translate(-1px, -1px) rotate(1deg)
+	}
+	90% {
+		-ms-transform: translate(2px, 2px) rotate(0)
+	}
+	100% {
+		-ms-transform: translate(1px, -2px) rotate(-1deg)
+	}
+}
+
+@keyframes spaceboots {
+	0% {
+		transform: translate(2px, 1px) rotate(0)
+	}
+	10% {
+		transform: translate(-1px, -2px) rotate(-1deg)
+	}
+	20% {
+		transform: translate(-3px, 0) rotate(1deg)
+	}
+	30% {
+		transform: translate(0, 2px) rotate(0)
+	}
+	40% {
+		transform: translate(1px, -1px) rotate(1deg)
+	}
+	50% {
+		transform: translate(-1px, 2px) rotate(-1deg)
+	}
+	60% {
+		transform: translate(-3px, 1px) rotate(0)
+	}
+	70% {
+		transform: translate(2px, 1px) rotate(-1deg)
+	}
+	80% {
+		transform: translate(-1px, -1px) rotate(1deg)
+	}
+	90% {
+		transform: translate(2px, 2px) rotate(0)
+	}
+	100% {
+		transform: translate(1px, -2px) rotate(-1deg)
+	}
+}
+
+
+
+
 .animated_score .animated_score_move .flip1{
 	background-image: none;
     background-repeat: no-repeat;
@@ -3607,7 +4041,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2db7aa', end
 	height: 5px;
 }*/
 
-
+/*
 .animated_score .ball-explode-1{
     -webkit-animation: throwout1 .7s linear;
   	-moz-animation:    throwout1 .7s linear;
@@ -3651,7 +4085,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2db7aa', end
   	-o-animation:      throwout5 .7s linear; 
   	animation:         throwout5 .7s linear;
   	opacity: 0;
-}
+}*/
 
 
 
